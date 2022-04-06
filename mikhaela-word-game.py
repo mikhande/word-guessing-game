@@ -1,15 +1,22 @@
+#Game
 our_word = 'onomatopoeia'
+
+word = str and len > 1
+
+letter = str and len == 1
 
 player_guess_num = 7
 
-player_guess = str(input('Guess a letter or a word: '))
+show_word = ""
+for x in len(our_word):
+    show_word +='_'
 
-word = str & len > 1
+player_guesses =[]
 
-letter = str & len == 1
+length = len(our_word)
 
+player_guess = False
 while player_guess == False:
-    guess ==
-
-if guess != word:
-    print('That is not a letter or a word, guess again')
+    guess = str(input('Guess a letter or a word: '))
+    if guess != str:
+        print('That is not a word or a letter... try again.')
